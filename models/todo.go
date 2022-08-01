@@ -12,7 +12,7 @@ type Todo struct {
     Creator    string
 }
 
-// "Implement" the Stringer interface: documentation of string verbs: https://golang.org/pkg/fmt/
+// "Implement" the Stringer interface
 func (t Todo) String() string {
     return fmt.Sprintf("ToDo: %s is done: %t", t.Name, t.Completed)
 }
